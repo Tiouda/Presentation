@@ -8,32 +8,97 @@
     <title>Maquette 1</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
-    <script src="main.js"></script>
     <script
       src="https://kit.fontawesome.com/962f25715d.js"
       crossorigin="anonymous"
     ></script>
   </head>
 
-  <header>
-    <div>
-      <img src="img/logo.svg" alt="" />
-      <nav>
-        <ul>
-          <li><a href="">Homme</a></li>
-          <li><a href="">Femme</a></li>
-          <li><a href="">Unisexe</a></li>
-          <li><a href="">Accessoire</a></li>
-        </ul>
-      </nav>
-      <form action=""><input type="text" placeholder="Recherche..." /></form>
-    </div>
-    <div>
-      <i class="fa-solid fa-cart-shopping"></i>
-      <i class="fa-solid fa-user"></i>
-      
-    </div>
-  </header>
+  <body>
+    <header>
+      <div class="navbar">
+        <img src="img/logo.svg" alt="" />
+        <nav>
+          <ul>
+            <li><a href="Homme/Homme.html">Homme</a></li>
+            <li><a href="Femme/Femme.html">Femme</a></li>
+            <li><a href="Unisexe/unisexe.html">Unisexe</a></li>
+            <li><a href="Chaussure/chaussure.html">Chaussures</a></li>
+          </ul>
+        </nav>
+        <form action=""><input type="text" placeholder="Recherche..." /></form>
+      </div>
+      <div>
+        <button type="button">
+          <i class="fa-solid fa-user"></i><span></span>Connexion
+        </button>
+        <button type="button">
+          <i class="fa-solid fa-cart-shopping"></i><span></span>Panier
+        </button>
+      </div>
+    </header>
 
-  <body></body>
+    <main>
+      <div class="carousel-wrapper">
+        <span id="item-1"></span>
+        <span id="item-2"></span>
+        <span id="item-3"></span>
+        <div class="carousel-item item-1">
+          <a href="#item-3" class="arrow-prev arrow"></a>
+          <a href="#item-2" class="arrow-next arrow"></a>
+        </div>
+
+        <div class="carousel-item item-2">
+          <a href="#item-1" class="arrow-prev arrow"></a>
+          <a href="#item-3" class="arrow-next arrow"></a>
+        </div>
+
+        <div class="carousel-item item-3">
+          <a href="#item-2" class="arrow-prev arrow"></a>
+          <a href="#item-1" class="arrow-next arrow"></a>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <div class="groupe">
+        <div class="paiement">
+          <h3>Nous acceptons</h3>
+          <div class="iconepaiement">
+            <img src="img/visa.svg" />
+            <img src="img/cartebancaire.svg" />
+            <img src="img/paypal.svg" />
+            <img src="img/mc.svg" />
+          </div>
+        </div>
+
+        <div class="aide">
+          <h3>Besoin d'aide ?</h3>
+          <div class="lien">
+            <a href="">Livraison</a>
+            <a href="">Paiement</a>
+            <a href="">Retours</a>
+            <a href="">Statut de commande</a>
+            <a href="">Effectuer un retour</a>
+            <a href="">Newsletter</a>
+          </div>
+
+          <div class="liste">
+            <label for="cars">Changer de pays:</label>
+            <select id="cars" name="cars">
+              <option value="France">France: €</option>
+              <option value="United Kingdom">United Kingdmon: £</option>
+              <option value="España">España: €</option>
+              <option value="Italia">Italia: €</option>
+              <option value="Austria">Austria: €</option>
+              <option value="Belgium">Belgium: €</option>
+              <option value="Finland">Finland: €</option>
+              <option value="Grece">Greece: €</option>
+              <option value="Ireland">Ireland: €</option>
+            </select>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>
