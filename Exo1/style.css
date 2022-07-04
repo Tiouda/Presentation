@@ -34,26 +34,6 @@ li {
   padding: 0 9px;
 }
 
-.navbar ul li {
-  display: inline-block;
-  position: relative;
-}
-
-.navbar ul li::after {
-  content: "";
-  height: 3px;
-  width: 0%;
-  background: #a02f2f;
-  position: absolute;
-  left: 0;
-  bottom: -10px;
-  transition: 0.5s;
-}
-
-.navbar ul li:hover::after {
-  width: 100%;
-}
-
 a {
   text-decoration: none;
   color: white;
@@ -104,6 +84,26 @@ button:hover span {
 
 button:hover {
   border: none;
+}
+
+.navbar ul li {
+  display: inline-block;
+  position: relative;
+}
+
+.navbar ul li::after {
+  content: "";
+  height: 3px;
+  width: 0%;
+  background: #a02f2f;
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  transition: 0.5s;
+}
+
+.navbar ul li:hover::after {
+  width: 100%;
 }
 
 /* Début du Caroussel */
@@ -171,6 +171,7 @@ button:hover {
   z-index: 3;
   opacity: 1;
 }
+/* Fin Carroussel */
 
 /* Footer */
 
